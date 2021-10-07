@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Order Form - Lightning Studios 3.0</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Inter&display=swap" rel="stylesheet">
+  </head>
+  <body class="indexhtml">
+    <div class="topbar">abcdefghahahhaha</div>
+    <h1>Lightning Studios - Order a Service</h1>
+    <form class="orderform" action="orderform.php" method="post">
+      <input type="text" name="scratchusername" placeholder="Your scratch username" class="lbl" required>
+      <br>
+      <select name="svc" id="svc" class="lbl2">
+        <option value="none">(Choose a service)</option>
+        <option value="forumsignaturebuttons">Signature Buttons - Buttons for signatures in forums, they're awesome!</option>
+        <option value="bbcode">BBCode - Layouts for your forum posts!</option>
+        <option value="design">Design - Profile pictures, banners, thumbnails, etc</option>
+        <option value="vectorart">Vector Art - Similar to Design, but the art is in vector form (high quality pictures)!</option>
+        <option value="imagehosting">Image Hosting - Get your pictures hosted!</option>
+        <option value="reviews">Reviews - Get accurate reviews of your projects!</option>
+        <option value="advertising">Advertising - Make your projects and studios more popular!</option>
+        <option value="oc">OCs - We do OCs, yes!</option>
+        <option value="ideas">Ideas - Don't have any ideas for your new project? We can give some ideas we have to you!</option>
+        <option value="codebeginner">Beginner Code - New to scratch? But the default built-in tutorials in the projects are too easy and don't answer your problems? We can help!</option>
+        <option value="codeintermediate">Intermediate Code - Need help with some slightly advanced code? Here you go!</option>
+      </select>  
+    <br><br>
+    <input type="text" name="whoyouwanttodoit" placeholder="Who do you want to do it? (optional)" class="lbl">
+    <br>
+    <input type="text" name="timezone" placeholder="Your timezone (optional)" class="lbl">
+    <br>
+    <label for="duedate" class="intert">Due date:</label>
+    <input type="date" name="duedate" class="lbl">
+    <br>
+    <textarea name="description" rows="6" placeholder="Description (example: what art to make)" class="lblsmall"></textarea>
+    <br>
+    <textarea name="otherdetails" rows="4" placeholder="Other Details" class="lblsmall"></textarea>
+    <br>
+    <a href="#" class="redbutton" name="submit">Send</an>
+    </form>
+  </body>
+</html>
